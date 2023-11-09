@@ -1,35 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- zomato logo in the tab -->
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Zomato_logo.png/220px-Zomato_logo.png"
-    />
-    <!-- font awesome icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- poppins font by google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- importing styles.css -->
-    <link rel="stylesheet" href="/styles.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- zomato logo in the tab -->
+  <link rel="icon" type="image/x-icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Zomato_logo.png/220px-Zomato_logo.png" />
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- poppins font by google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
 
-    <title>Zomato Clone</title>
-  </head>
-  <body></body>
+  <!-- importing styles.css -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <title>Zomato Clone</title>
+</head>
+
+<body>
+  <section class="hero-section">
+    <header>
+      <nav class="navbar">
+        <ul class="navbar-list flex">
+          <div class="get-the-app-text">
+            <a class="get-the-app-link" href="#">Get The App</a>
+          </div>
+          <div class="nav-menu-container flex">
+            <li class="item item-1"><a href="#">Inventor Relations</a></li>
+            <li class="item item-2"><a href="#">Add Restaurant</a></li>
+            <li class="item item-3"><a href="#">Login</a></li>
+            <li class="item item-4"><a href="#">Sign Up</a></li>
+            <a href="#" class="user-icon"><i class="fa-solid fa-user"></i></a>
+          </div>
+        </ul>
+      </nav>
+      <div class="hero-section-container">
+        <div class="hero-items flex">
+          <img src="./assets/heroSectionLogo.png" alt="zomoto-banner" class="zomato-banner">
+          <h1 class="hero-section-title">Discover the best food & drinks in Bangalore</h1>
+          <div class="hero-input-text">
+            <span><input type="text" class="hero-input-text1" placeholder="Bangalore"><input type="text"
+                class="hero-input-text2" placeholder="Search for a restaurant, cuisine or dish"></span>
+          </div>
+        </div>
+    </header>
+  </section>
+  <section class="services-section flex">
+    <div class="services-section-item services-section-item-1">
+      <img src="./assets/item1.png" alt="food item image" class="item-1-img">
+      <div class=" item-content item-1-content">
+        <h2>Order Online</h2>
+        <p>Stay home and order to your door</p>
+      </div>
+    </div>
+    <div class="services-section-item services-section-item-2">
+      <img src="./assets/item2.png" alt="food item image" class="item-2-img">
+      <div class="item-content item-2-content">
+        <h2>Dining</h2>
+        <p>View the city's favourite dining venus</p>
+      </div>
+    </div>
+    <div class="services-section-item services-section-item-3">
+      <img src="./assets/item3.png" alt="food item image" class="item-3-img">
+      <div class="item-content item-3-content">
+        <h2>Nightlife and Clubs</h2>
+        <p>Explore the city's top nightlife outlets</p>
+      </div>
+    </div>
+    <div class="services-section-item services-section-item-4">
+      <img src="./assets/item4.png" alt="food item image" class="item-4-img">
+      <div class="item-content item-4-content">
+        <h2>Delicious Delights</h2>
+        <p>Order your favourites and get a discount</p>
+      </div>
+    </div>
+  </section>
+  <section class="collections">
+    <h2>Collections</h2>
+    <div class="collections-content flex">
+      <span>Explore curated lists of top resturants, cafes, pubs, and barsin, Bangalore</span>
+      <span id="target">All Collections in Bangalore</span>
+    </div>
+    <div class="collections-card-container flex">
+      <div class="collections-card collections-card-1">
+        <div class="collections-card-content">
+          <h4>Live Cricket Screening</h4>
+          <p>60 places</p>
+        </div>
+      </div>
+      <div class="collections-card collections-card-2">
+        <div class="collections-card-content">
+          <h4>Some Special Sweets</h4>
+          <p>80 places</p>
+        </div>
+      </div>
+      <div class="collections-card collections-card-3">
+        <div class="collections-card-content">
+          <h4>Newly Opened resturants</h4>
+          <p>90 places</p>
+        </div>
+      </div>
+      <div class="collections-card collections-card-4">
+        <div class="collections-card-content">
+          <h4>Great Cafes, near me</h4>
+          <p>50 places</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container get-the-app">
+    <div class="semiContainer">
+      <div class="left">
+        <img src="./assets/mobileBanner.png" alt="Get the Mobile app" />
+      </div>
+      <div class="right">
+        <h2>Get the Zomato App</h2>
+        <p>We will send you a link, open it on your phone to download the app</p>
+
+        <div class="radio-button-container">
+          <div>
+            <input type="radio" name="download_app" id="email" />
+            <label for="email" style="font-size: 14px;">Email</label>
+          </div>
+          <div>
+            <input type="radio" name="download_app" id="phone" />
+            <label for="phone" style="font-size: 14px;">Phone</label>
+          </div>
+
+        </div>
+
+        <div class="input-container">
+          <input type="text" placeholder="Email" />
+          <button>Share App Link</button>
+        </div>
+        <div class="download-app-container">
+          <h5>Download App Form</h5>
+          <div>
+            <img src="./assets/appleStore.png" alt="Apple Store" />
+            <img src="./assets/playStore.png" alt="Play Store" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="container footer">
+    <div class="footer-section flex">
+      <img src="./assets/logo.png" alt="zomato-logo">
+      <div class="button-container flex">
+        <button class="footer-button flex">
+          <img src="https://flagcdn.com/w40/in.png" alt="">India
+        </button>
+        <button class="footer-button flex">
+          <i class="fa fa-globe"></i>English
+        </button>
+      </div>
+    </div>
+    <div class="navigation-container">
+      <div class="link-container flex">
+        <h5>ABOUT ZOMATO</h5>
+        <a class="footer-link" href="#">Who we are</a>
+        <a class="footer-link" href="#">Blogs</a>
+        <a class="footer-link" href="#">Work with us</a>
+        <a class="footer-link" href="#">Investore Relations</a>
+        <a class="footer-link" href="#">Report Fraud</a>
+        <a class="footer-link" href="#">Conatct Us</a>
+      </div>
+      <div class="link-container flex">
+        <h5>ZOMAVERSE</h5>
+        <a class="footer-link" href="#">Zomato</a>
+        <a class="footer-link" href="#">Feeding</a>
+        <a class="footer-link" href="#">Hyperpure</a>
+        <a class="footer-link" href="#">Zomaland</a>
+      </div>
+      <div class="link-container flex">
+        <h5>FOR RESTAURANTS</h5>
+        <a class="footer-link" href="#">Partner With Us</a>
+        <a class="footer-link" href="#">Apps For You</a>
+        <br />
+        <h5>ENTERPRICES</h5>
+        <a class="footer-link" href="#">Work with us</a>
+        <a class="footer-link" href="#">Zomato for work</a>
+      </div>
+      <div class="link-container flex">
+        <h5>LEARN MORE</h5>
+        <a class="footer-link" href="#">Privacy</a>
+        <a class="footer-link" href="#">Security</a>
+        <a class="footer-link" href="#">Terms</a>
+        <a class="footer-link" href="#">SiteMap</a>
+      </div>
+      <div class="link-container flex">
+        <h5>SOCIAL LINKS</h5>
+        <div class="social-links-container">
+          <button><i class="fa-brands fa-linkedin-in"></i></button>
+          <button><i class="fa-brands fa-instagram"></i></button>
+          <button><i class="fa-brands fa-twitter"></i></button>
+          <button><i class="fa-brands fa-youtube"></i></button>
+          <button><i class="fa-brands fa-facebook"></i></button>
+        </div>
+        <br />
+        <img src="./assets/appleStore.png" alt="Footer Logos" class="footer-section-logos" />
+        <img src="./assets/playStore.png" alt="Footer Logos" class="footer-section-logos" />
+      </div>
+    </div>
+    <!-- <hr> -->
+    <div class="disclaimer">
+      By continuing past this page, you agree to our Terms of Service,
+      Cookie Policy, Privacy Policy and Content Policies. All trademarks
+      are properties of their respective owners. 2008-2022 © Zomato™ Ltd.
+      All rights reserved.
+    </div>
+  </footer>
+</body>
+
 </html>
