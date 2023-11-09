@@ -58,6 +58,8 @@ a {
     color: var(--tertiary-color);
 }
 
+/* Navbar */
+
 .navbar-list {
     justify-content: space-between;
     margin: 0 50px;
@@ -73,6 +75,8 @@ a {
     gap: 20px;
     flex-wrap: nowrap;
 }
+
+/* Hero Section */
 
 .hero-section {
     min-height: 60vh;
@@ -129,6 +133,8 @@ a {
     display: none;
 }
 
+/* Services Section */
+
 .services-section {
     min-height: 50vh;
     margin-top: 10px;
@@ -161,6 +167,8 @@ a {
 .item-content {
     margin: 8px;
 }
+
+/* Collections Section */
 
 .collections {
     padding-inline: var(--inline-padding);
@@ -218,6 +226,8 @@ a {
 .collections-card-content p {
     color: var(--primary-color);
 }
+
+/* Get The App Section */
 
 .get-the-app {
     display: flex;
@@ -335,6 +345,8 @@ a {
     cursor: pointer;
 }
 
+/* Footer Section */
+
 .footer {
     width: 100%;
     padding-inline: var(--inline-padding);
@@ -429,7 +441,6 @@ a {
 }
 
 @media only screen and (max-width: 1300px) {
-
     .get__the_app .semiContainer .left,
     .get__the_app .semiContainer .right {
         flex: 1;
@@ -438,26 +449,26 @@ a {
     .get__the_app .semiContainer {
         width: 80%;
     }
+}
 
-    @media screen and (max-width: 1070px) {
-        :root {
-            --inline-padding: 1rem;
-        }
+@media screen and (max-width: 1070px) {
+    :root {
+        --inline-padding: 1rem;
+    }
 
-        .collections {
-            padding-inline: var(--inline-padding);
-            margin-top: 40px;
-        }
+    .collections {
+        padding-inline: var(--inline-padding);
+        margin-top: 40px;
+    }
 
-        .collections h2 {
-            text-align: center;
-        }
-
-        .collections-content {
-            text-align: center;
-            flex-direction: column;
-            align-items: center;
-        }
+    .collections h2 {
+        text-align: center;
+    }
+    
+    .collections-content {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -484,7 +495,6 @@ a {
         width: 80%;
         flex-direction: column;
     }
-
 }
 
 
